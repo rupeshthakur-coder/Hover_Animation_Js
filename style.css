@@ -1,0 +1,31 @@
+.wrap{
+  width: 200px;
+  margin:auto;
+  z-index: 1;
+}
+.msg{
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  width: 200px;
+  position:absolute;
+  margin:55px 0 0 2px;
+  pointer-events: none;
+}
+.sticker{
+  width: 200px;
+  height: 200px;
+  position:absolute;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/13034/sticker.png)
+  center top no-repeat;
+  animation:spin 10s linear infinite;
+  animation-play-state: paused;
+}
+.sticker:hover{
+  animation-play-state: running;
+}
+@keyframes spin{
+  100%{
+    transform: rotate(1turn);
+  }
+}
